@@ -1,0 +1,158 @@
+/* CSS reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* set font */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1110px;
+    margin-inline: auto;
+    padding-block: 33px;
+    padding-inline: 20px;
+}
+
+
+.nav_buttons ul {
+    display: flex;
+    gap: 49px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav_buttons a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 45px;
+    border: solid 1px #1E255E;
+    color: #1E255E;
+    transition: border-color 250ms, background-color 250ms;
+}
+
+.nav_buttons a:hover {
+    border-color: #4BF2CC;
+    background-color: #4BF2CC;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.logo p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #1E255E;
+}
+
+
+/* main */
+
+ .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 30px;
+    max-width: 980px;
+    margin-inline: auto;
+    margin-block: auto;
+    margin-top: 65px;
+    padding-inline: 20px;
+ }
+
+ .home_text {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 84px;
+ }
+
+.start_btn {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: #1E255E;
+    padding: 19px 48px;
+    background-color: #4BF2CC;
+    max-width: 200px;
+    margin-inline: auto;
+    margin-bottom: 28px;
+    transition: background-color 250ms;
+}
+
+.start_btn:hover {
+    background-color: #2fcaa6;
+}
+
+ .home_text, .start_btn {
+    text-align: center;
+ }
+
+ .home_img {
+    max-width: 430px;
+    margin-inline: auto;
+    padding-inline: 10px;
+ }
+
+ /* Media queries */
+
+ @media (max-width: 480px) {
+    .disappear {
+        display: none;
+    }
+
+    .home_img {
+        max-width: 80%;
+    }
+ }
